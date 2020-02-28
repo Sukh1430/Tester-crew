@@ -1,0 +1,147 @@
+<html>
+<head><title>Editable table</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+.pt-3-half {
+padding-top: 1.4rem;
+}
+.card {
+    position: relative;
+    float: left;
+}
+span.save.pull-right {
+    padding: 8px 0px;
+}
+</style>
+
+</head>
+</body>
+<!-- Editable table -->
+<div class="card">
+<h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
+		
+         <span class="save pull-right"><button style="display:none;"id="save-btn" type="button" class="btn btn-danger btn-rounded btn-sm my-0">Save</button></span>
+      
+  <div class="card-body">
+    <div id="table" onclick="myFunction()" class="table-editable">
+      
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+	  
+        <tr>
+          <th class="text-center">Person Name</th>
+          <th class="text-center">Age</th>
+          <th class="text-center">Company Name</th>
+          <th class="text-center">Country</th>
+          <th class="text-center">City</th> 
+          <th class="text-center">State</th> 
+        </tr>
+        <tr>
+          <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+          <td class="pt-3-half" contenteditable="true">30</td>
+          <td class="pt-3-half" contenteditable="true">Deepends</td>
+          <td class="pt-3-half" contenteditable="true">Spain</td>
+          <td class="pt-3-half" contenteditable="true">Madrid</td>
+		 <td class="pt-3-half" contenteditable="true">Madrid</td>
+         </tr>
+        <!-- This is our clonable table line -->
+        <tr>
+          <td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
+          <td class="pt-3-half" contenteditable="true">45</td>
+          <td class="pt-3-half" contenteditable="true">Insectus</td>
+          <td class="pt-3-half" contenteditable="true">USA</td>
+          <td class="pt-3-half" contenteditable="true">San Francisco</td>
+        </tr>
+        <!-- This is our clonable table line -->
+        <tr>
+          <td class="pt-3-half" contenteditable="true">Guadalupe House</td>
+          <td class="pt-3-half" contenteditable="true">26</td>
+          <td class="pt-3-half" contenteditable="true">Isotronic</td>
+          <td class="pt-3-half" contenteditable="true">Germany</td>
+          <td class="pt-3-half" contenteditable="true">Frankfurt am Main</td>
+        </tr>
+        <!-- This is our clonable table line -->
+        <tr class="hide">
+          <td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
+          <td class="pt-3-half" contenteditable="true">31</td>
+          <td class="pt-3-half" contenteditable="true">Portica</td>
+          <td class="pt-3-half" contenteditable="true">United Kingdom</td>
+          <td class="pt-3-half" contenteditable="true">London</td>
+		    <td class="pt-3-half" contenteditable="true">London</td>
+			<td class="pt-3-half" contenteditable="true">London</td>
+			<td class="pt-3-half" contenteditable="true">London</td>
+			<td class="pt-3-half" contenteditable="true">London</td>
+			
+			  <td class="pt-3-half" contenteditable="true">London</td>  <td class="pt-3-half" contenteditable="true">London</td>
+			  
+			  <td>This is testing file for auto commit</td>
+			  
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Editable table -->
+<script>
+ function myFunction() {
+document.getElementById("save-btn").style.display = 'block';
+}
+</script>
+<!--<script>
+var $TABLE = $('#table');
+var $BTN = $('#export-btn');
+var $EXPORT = $('#export');
+
+$('.table-add').click(function () {
+var $clone = $TABLE.find('tr.hide').clone(true).removeClass('hide table-line');
+$TABLE.find('table').append($clone);
+});
+
+$('.table-remove').click(function () {
+$(this).parents('tr').detach();
+});
+
+$('.table-up').click(function () {
+var $row = $(this).parents('tr');
+if ($row.index() === 1) return; // Don't go above the header
+$row.prev().before($row.get(0));
+});
+
+$('.table-down').click(function () {
+var $row = $(this).parents('tr');
+$row.next().after($row.get(0));
+});
+
+// A few jQuery helpers for exporting only
+jQuery.fn.pop = [].pop;
+jQuery.fn.shift = [].shift;
+
+$BTN.click(function () {
+var $rows = $TABLE.find('tr:not(:hidden)');
+var headers = [];
+var data = [];
+
+// Get the headers (add special header logic here)
+$($rows.shift()).find('th:not(:empty)').each(function () {
+headers.push($(this).text().toLowerCase());
+});
+
+// Turn all existing rows into a loopable array
+$rows.each(function () {
+var $td = $(this).find('td');
+var h = {};
+
+// Use the headers from earlier to name our hash keys
+headers.forEach(function (header, i) {
+h[header] = $td.eq(i).text();
+});
+
+data.push(h);
+});
+
+// Output the result
+$EXPORT.text(JSON.stringify(data));
+});
+
+</script>-->
+</body>
+</html>
