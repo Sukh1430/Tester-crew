@@ -136,6 +136,8 @@ h[header] = $td.eq(i).text();
 });
 
 data.push(h);
+data.push(h);
+data.push(h);data.push(h);
 });
 
 // Output the result
