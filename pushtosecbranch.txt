@@ -21,6 +21,7 @@ span.save.pull-right {
 <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
 		
          <span class="save pull-right"><button style="display:none;"id="save-btn" type="button" class="btn btn-danger btn-rounded btn-sm my-0">Save</button></span>
+		 "btn btn-danger btn-rounded btn-sm my-0">Save</button></span>"btn btn-danger btn-rounded btn-sm my-0">Save</button></span>"btn btn-danger btn-rounded btn-sm my-0">Save</button></span>"btn btn-danger btn-rounded btn-sm my-0">Save</button></span>
       
   <div class="card-body">
     <div id="table" onclick="myFunction()" class="table-editable">
