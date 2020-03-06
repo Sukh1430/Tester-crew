@@ -67,9 +67,6 @@ span.save.pull-right {
           <td class="pt-3-half" contenteditable="true">Portica</td>
           <td class="pt-3-half" contenteditable="true">United Kingdom</td>
           <td class="pt-3-half" contenteditable="true">London</td>
-		    <td class="pt-3-half" contenteditable="true">London</td>
-			<td class="pt-3-half" contenteditable="true">London</td>
-			<td class="pt-3-half" contenteditable="true">London</td>
 			<td class="pt-3-half" contenteditable="true">London</td>
 			
 			  <td class="pt-3-half" contenteditable="true">London</td>  <td class="pt-3-half" contenteditable="true">London</td>
