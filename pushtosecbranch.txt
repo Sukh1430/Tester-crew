@@ -8,6 +8,7 @@ padding-top: 1.4rem;
 .card {
     position: relative;
     float: left;
+	float: left;
 }
 span.save.pull-right {
     padding: 8px 0px;
